@@ -1,0 +1,227 @@
+/* CSS Selectors:
+selector{
+    property : value ;
+}
+NB: selector '*' means everything; used for Reset
+Reset: 
+    *{padding:0px
+      margin:0px}
+
+Box Model:
+      border: border surrounding element
+      padding: the space surrounding inside the element
+      margin: space surrounding the outside of the element
+
+      border/padding/margin: [size] [colour] [style]
+       padding and margin shorthand:
+         TRBL
+          Top
+          Right
+          Bottom 
+          Left
+*/
+
+/*-----------GLOBALs------------*/
+body{
+    background-color: #f4f4f4;
+    color:#555555
+}
+
+.clr{
+    clear: both;
+}
+p{
+    /*Web Safe fonts don't need to have fonts imported */
+
+    /*long hand format:
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal; */
+    
+    /*short hand format*/
+    font: normal 16px Arial, Helvetica, sans-serif;
+
+    /*spacing of words*/
+    line-height: 1.6em;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color:green;
+}
+a:visited{
+    color: black;
+}
+/* Class names begin with a '.'*/
+/*he code 
+below cna be made into a class
+.myForm input[type="submit"]{
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 10px 15px;
+    border: none; */
+.button{
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 10px 15px;
+    border: none;
+}   
+/*-----------GLOBALs------------*/
+
+
+
+/* Class names begin with a '.'*/
+.container{
+    width: 50%;
+    margin: auto;
+}
+.box1{
+    background-color: black;
+    color: #f4f4f4;
+
+     /*we can choose our target 
+     from shorthand to very specific*/ 
+    border: 5px red solid;
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted ;
+
+    padding-top: 20px;/*space between 'Hello World'
+     and border increased*/
+    padding: 20px; 
+
+    margin-top: 20px;/*space between border
+    and top of page increased; div block went down*/
+    margin: 20px 0px;/*div block got 'skinnier'*/
+}
+
+.box1 h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.box2{
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0px;
+}
+.categories{
+    border:1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+.categories h2{
+    text-align: center;
+}
+.categories ul{
+    border: 1px ;
+    padding: 0px;
+    list-style: none;
+
+}
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    /*list-style-image: url();*/
+}
+.myForm{
+    padding: 20px;
+}
+.myForm.formGroup{
+    padding-bottom: 15px;
+}
+.myForm label{
+    display: block;
+}
+.myForm input[type="text"],
+.myForm textarea,
+.myForm input[type="email"]{
+    padding: 8px;
+    width: 100%;
+}
+.block{
+    float:left;
+    width: 33.3%;
+    border:1px solid #ccc;
+    padding: 10px;
+    /*box-sizing: border-box;
+    will incorporate everything
+    into one width */
+    box-sizing: border-box;
+}
+#mainBlock{
+    border:1px solid #ccc;
+    padding: 10px;
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+}
+#sidebar{
+    border:1px solid #ccc;
+    padding: 10px;
+    background-color: #000;
+    color: #ccc;
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+/*------------POSITION----------------*/
+
+
+/*-----ABSOLUTE, RELATIVE are useful for games using CSS -------*/
+.pBox{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    /* relative: as in 'relative' to this element, 
+    another element will be positioned. */
+    background-image: url("../images/GalleryCard.jpg");
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.pBox h1{
+    position: absolute;
+    /* absolute allows us to target
+    whatever position we want 
+    inside of a relative element
+    */
+    top: 100px;
+    left: 200px;
+    
+}
+.pBox h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+/*--------FIXED are useful for social media linkd-------*/
+.fixMe{
+    position: fixed;
+    top: 400px;
+}
+.myList li:first-child{
+    background: red;/*don't have to have '-color'*/
+    
+}
+.myList li:last-child{
+    background:blue;
+}
+.myList li:nth-child(5){
+    background: yellowgreen;
+}
+.myList li:nth-child(even){
+    background: yellow;
+}

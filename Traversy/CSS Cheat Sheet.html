@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+           <div class="box1"> <!--class are for COMMON
+           ATTRIBUTES ACROSS ELEMENTS-->
+            <h1>Hello World</h1>
+            <p>
+                Lorem ipsum dolor, 
+                sit amet consectetur adipisicing elit. 
+                Praesentium quis necessitatibus ex expedita, 
+                excepturi natus nam qui quaerat voluptas nobis. 
+                Illo quas alias itaque! 
+                Iste ratione similique repellendus molestiae sint!
+            </p>
+        </div>
+        <div class="box2">
+            <h1>Goodbye World</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Quos in suscipit perspiciatis reprehenderit explicabo.
+                Nam possimus omnis porro provident, 
+                ut aliquam doloribus rerum dicta suscipit 
+                delectus amet molestias excepturi quisquam?
+            </p> 
+        </div>
+        <div class="categories">
+            <h2>categories</h2>
+            <ul>
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+                <li><a href="#">Category 4</a></li>
+            </ul>
+        </div>
+
+
+        <br>
+        <hr>
+        <form action="proccess.php" method="POST">
+            <!--action attribute submits to a certain page; 
+             our case its a php page named 'process'
+            method attribute tells type of request is
+            being sent to the server; POST 
+            (adds data to database) in our case-->
+            
+            <!--text input-->
+                <div class="myForm">
+                    <div class="formGroup">   
+                    <label> First name</label>
+                    <input type="text" name="firstName" placeholder="Enter first name">
+                    </div>
+                    
+                    <br>
+
+                    <div class="formGroup">
+                    <label> Last name</label>
+                    <input type="text" name="lastName" placeholder="Enter last name"> 
+                    </div>
+
+                    <br>
+
+            <!--email input-->
+                    <div class="formGroup">
+                    <label>Email</label>
+                    <input type="email" name="email">
+                    </div>
+            <!--textarea-->
+
+                    <br>
+
+                    <div class="formGroup">
+                    <label>Message</label> 
+                    <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+                    </div>
+
+            <!--submit button-->
+                    <div class="formGroup">
+                    <input type="submit" name="submit" value="submit">
+                    </div>
+                    
+                    
+                </div>
+
+                
+               
+            </form>
+       <!-------Alignment: Even------->
+       <div class="block">
+        <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Nemo, nesciunt!
+            </p>
+       </div>
+       <div class="block">
+        <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Nemo, nesciunt!
+                </p>
+       </div>
+        <div class="block">
+        <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Nemo, nesciunt!
+            </p>
+        </div>
+        <!-------Alignment: Uneven------->
+        <div class="clr"> <!--clearing float-->
+            <div id="mainBlock" >
+                <h3>Heading</h3>
+                                <p>Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                                Nemo, nesciunt!
+                                </p>
+            </div>
+            <div id="sidebar">
+                
+                                <p>Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                                Nemo, nesciunt!
+                                </p>
+            </div>
+        </div>
+        
+        <div class="clr"></div>
+
+        <div class="pBox">
+            <h1>Hello</h1>
+            <h2>Goodbye</h2>
+        </div>
+
+        <ul class="myList">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+    </div><!--container-->
+
+    <a class="button fixMe" href="">hello</a>
+      
+<footer class="clr">
+
+</footer>    
+</body>
+</html>

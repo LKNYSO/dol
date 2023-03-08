@@ -1,0 +1,367 @@
+<!--
+    WHAT IS FLEXBOX?
+
+      A CSS layout mode that 
+      provides  an easy way to
+      arrange items within a container
+      - No floats!
+      - Responsive and mobile friendly
+      - Positioning child elements is MUCH easier
+      - Flex container's margins do not collapse with
+        margins of the contents
+      - Order of elements can easily be changed without
+        without editing the source HTML
+      - The ability to alter item width 
+        and height to best fit in its containers
+        available free space
+      - Flexbox is direction-agnostic; 
+        no vertical/horizontal bias
+      - Built for small-scale layouts 
+
+    FLEX PROPERTIES
+
+    display: flex| infinte-flex;           flex-grow: <number>;
+    flex-direction: row| column            flex-shrink: <number>;
+    flex-wrap: wrap| nowrap| wrapreverse   flex: <integer>;
+    justify-content: flex-start| flex-end| center
+    align-self: flex-start| flex-end| center
+    align-items: flex-start| flex-end| center
+    align-content: flex-start| flex-end| center 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexin</title>
+</head>
+<body>
+    <style>
+
+      @media(min-width: 768px){
+        .container1{
+          display: flex;
+         /*align-items: stretch; 
+         default where box height is equal*/
+        }
+        .container2{
+          display: flex;
+          justify-content: space-between;
+          /*-> puts margin ONLY between elements*/
+        }      
+      }
+        .container3{
+          display: flex;
+          flex-wrap:wrap;
+        
+        }
+        
+        .container4{
+          display: flex;
+          /*flex items arranged in columns*/
+          flex-direction: column;       
+        }
+        .c4box{
+            flex-basis: 20%;
+        }
+        .c5box{
+          flex-basis: 20%;
+        }
+        .container1 div, .container2 div, .container3 div, .container4 div{
+            border: 1px #ccc solid;
+            padding: 10px;
+        }
+        /* multiple flex:n WHEN EQUAL == to display: flex; */
+        .box1{
+          flex: 1;
+          order: 3;
+        }
+        .box2{
+          flex: 1;
+          order: 1;
+        }
+        .box3{
+          flex: 3;
+          order: 2;
+        }
+        .container2box{
+          flex-basis: 20%; /* width: 20%; */
+        }
+        .container3box{
+          flex-basis: 10px;
+        }
+        .container4box1{
+          display: flex;
+          /*align-items: flex-end; 
+           -> height decreases from top,
+          box shifts to bottom*/
+          align-items: flex-end;
+          
+        }
+        .container4box2{
+          display: flex;
+          /*align-items: flex-start; 
+          -> height decreases from bottom,
+          box shifts to top*/
+          align-items: flex-start;
+    
+        }
+        .container4box3{
+          display: flex;
+          /*align-items: center; 
+          -> height decreases from top and bottom,
+          box shifts to centre*/
+          align-items: center;
+        }
+        .container5box1{
+          display: flex;
+          /*justify-content: flex-start; 
+          -> default justification*/
+          justify-content: flex-start;
+        }
+        .container5box2{
+          display: flex;
+          /*justify-content: flex-end; 
+          -> shifts content to right*/
+          justify-content: flex-end;
+        }
+        .container5box3{
+          display: flex;
+          /*justify-content: space-around;
+          -> puts margin around elements*/
+          justify-content: space-around;
+        }
+    </style>
+
+    <h1>"order" & "flex: (size)"</h1>
+    <div class="container1">
+        
+        <div class="box1">
+            <h1>Box One</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, impedit.
+            </p>
+        </div>
+        <div class="box2">
+            <h1>Box Two</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, impedit.
+            </p>
+        </div>
+        <div class="box3">
+            <h1>Box Three</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, impedit.
+            </p>
+        </div>
+
+    </div>
+    <h1>"justify-content: space-between"</h1>
+    <div class="container2">
+      <div class="container2box">
+        <h1>Box Four</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, impedit.
+        </p>
+      </div>
+      <div class="container2box">
+        <h1>Box Five</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, impedit.
+        </p>
+      </div>
+      <div class="container2box">
+        <h1>Box Six</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, impedit.
+        </p>
+      </div>
+    </div>
+    <h1>"flex-wrap: wrap"</h1>
+    <div class="container3">
+      <div class="container3box">
+        <h1>Box Seven</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, impedit.
+        </p>
+      </div>
+      <div class="container3box">
+        <h1>Box Eight</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, impedit.
+        </p>
+      </div>
+      <div class="container3box">
+        <h1>Box Nine</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, impedit.
+        </p>
+      </div>
+      <div class="container3box">
+      <h1>Box Ten</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, impedit.
+      </p>
+      </div>
+      <div class="container3box">
+      <h1>Box Eleven</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, impedit.
+      </p>
+      </div>
+      <div class="container3box">
+      <h1>Box Twelve</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, impedit.
+      </p>
+      </div>
+    </div>
+
+    <!----------ALIGNING OF ITEMS------>
+<!----------alighn-items: flex-end------>
+    <div class="container4">
+      <h1>"align-items: flex-end"</h1>
+      <div class="container4box1">
+        <div class="c4box">
+          <h1>Box Twelve</h1>
+          <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, est assumenda. 
+           Vero perspiciatis iste autem vitae nisi, 
+           ea voluptates temporibus reiciendis, 
+           ipsa repellendus distinctio at nihil aliquid accusantium in, 
+           facere repudiandae dolor ex aliquam mollitia non? 
+           Adipisci beatae ipsam tempora.
+          </p>
+        </div>
+        <div class="c4box">
+          <h1>Bix Thirteen</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Reprehenderit quisquam in, beatae nam, temporibus dignissimos, 
+            mollitia officia amet explicabo illum assumenda error aliquam quos molestias.
+          </p>
+        </div>
+        <div class="c4box">
+          <h1>Box Fourteen</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quasi.
+          </p>
+        </div>`
+
+      </div>
+
+<!----------alighn-items: flex-start------>
+      <h1>"align-items: flex-start"</h1>
+      <div class="container4box2">
+        <div class="c4box">
+          <h1>Box Fifteen</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, est assumenda. 
+           Vero perspiciatis iste autem vitae nisi, 
+           ea voluptates temporibus reiciendis, 
+           ipsa repellendus distinctio at nihil aliquid accusantium in, 
+           facere repudiandae dolor ex aliquam mollitia non? 
+           Adipisci beatae ipsam tempora.
+          </p>
+        </div>
+        <div class="c4box">
+          <h1>Box Sixteen</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Reprehenderit quisquam in, beatae nam, temporibus dignissimos, 
+            mollitia officia amet explicabo illum assumenda error aliquam quos molestias.
+          </p>
+        </div>
+        <div class="c4box">
+          <h1>Box Seventeen</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quasi.
+          </p>
+        </div>`
+      </div>
+
+<!----------alighn-items: center------>
+      <h1>"align-items: center"</h1>
+      <div class="container4box3">
+        <div class="c4box">
+          <h1>Box Eighteen</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, est assumenda. 
+            Vero perspiciatis iste autem vitae nisi, 
+            ea voluptates temporibus reiciendis, 
+            ipsa repellendus distinctio at nihil aliquid accusantium in, 
+            facere repudiandae dolor ex aliquam mollitia non? 
+            Adipisci beatae ipsam tempora.
+          </p>
+        </div>
+        <div class="c4box">
+          <h1>Box Nineteen</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Reprehenderit quisquam in, beatae nam, temporibus dignissimos, 
+            mollitia officia amet explicabo illum assumenda error aliquam quos molestias.
+          </p>
+        </div>
+        <div class="c4box">
+          <h1>Box Twenty</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quasi.
+          </p>
+        </div>`
+      </div>
+
+      <div class="container5">
+
+        <h1>"justify-content: flex-start"</h1>
+        <div class="container5box1">
+
+          <div class="c5box">
+            <h1>Box TwentyOne</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, possimus.</p>
+          </div>
+          <div class="c5box">
+            <h1>Box TwentyTwo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, possimus.</p>
+          </div>
+          <div class="c5box">
+            <h1>Box TwentyThree</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, possimus.</p>
+          </div>
+
+        </div>
+
+        <h1>"justify-content: flex-end"</h1>
+        <div class="container5box2">
+          <div class="c5box">
+            <h1>Box TwentyOne</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, possimus.</p>
+          </div>
+          <div class="c5box">
+            <h1>Box TwentyTwo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, possimus.</p>
+          </div>
+          <div class="c5box">
+            <h1>Box TwentyThree</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, possimus.</p>
+          </div>
+        </div>
+
+        <h1>"justify-content: space-around"</h1>
+        <div class="container5box3">
+          <div class="c5box">
+            <h1>Box TwentyOne</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, possimus.</p>
+          </div>
+          <div class="c5box">
+            <h1>Box TwentyTwo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, possimus.</p>
+          </div>
+          <div class="c5box">
+            <h1>Box TwentyThree</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, possimus.</p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

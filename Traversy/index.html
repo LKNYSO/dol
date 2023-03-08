@@ -1,0 +1,200 @@
+<!--Hello World-->
+
+<!--Tag Elements and Tag Attributes:
+
+    Tag Elements
+
+    Tag Attributes: 
+    - provide info about element
+    - placed within start tag
+
+    FORMAT:
+       <tagname attributename="attributevalue">
+           content
+       </tagname>
+-->
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>HTML Cheat Sheet</title>
+        </head>
+        <body>
+            <a href="blog semantic tags.html">Go to blog</a>
+            <!--Headings: Block Level element--> 
+            <h1>Headie One</h1>
+            <h2>Headie Two</h2>
+            <h3>Headie Three</h3>
+            <h4>Headie Four</h4>
+            <h5>Headie Five</h5>
+            <h6>Headie Six</h6>
+
+            <!--Paragraph: Block Level element-->
+            <p>
+                Lorem ipsum <!-- <strong> and <em> are 
+                Inline Level elements that bolden and
+                emphasize the text respectively --> 
+                <strong>dolor sit amet</strong>  consectetur 
+                adipisicing elit. <em>Quaerat</em> ,
+                veritatis officia odio deleniti quos quisquam itaque, suscipit dolorem, sit eum velit porro quia! Laboriosam adipisci, eum architecto magnam perspiciatis ullam.
+            </p>
+            <p>
+                Lorem ipsum <!-- <a> is an Inline Level element
+                that makes an element a link
+                to another page on our website
+                or another website --> 
+                <a href="chrome://newtab/" target="_blank">
+                dolor sit amet</a> consectetur, 
+                adipisicing elit. Earum, veniam.
+            </p>
+
+            <!--List:Block Level element-->
+
+            <!-- <ul> are unordered list -->
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+            </ul>
+
+            <!-- <ol> are ordered list -->
+            <ol>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+            </ol>
+
+            <!--Table:Block Level elements-->
+            <table>
+                <thead><!--table heading-->
+                    <tr><!--tables are built ROW BY ROW
+                            hence <tr> tag is used first...-->
+                        <th>Name</th><!--...then we follow...-->
+                        <th>Email</th><!--... with individual cells... -->
+                        <th>Age</th><!--...(which in this ccase are Headers)-->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lukhanyiso Brukwe</td>
+                        <td>blukhanyiso@yahoo.co.za</td>
+                        <td>26</td>
+
+                        <td>John Doe</td>
+                        <td>jondoeo@yahoo.co.za</td>
+                        <td>26</td>
+
+                        <td>Serena Williams</td>
+                        <td>swilliams@yahoo.co.za</td>
+                        <td>39</td>
+ 
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <hr><!--line for form-->
+            <br>
+            <!--Forms-->
+            <form action="proccess.php" method="POST">
+            <!--action attribute submits to a certain page; 
+             our case its a php page named 'process'
+            method attribute tells type of request is
+            being sent to the server; POST 
+            (adds data to database) in our case-->
+            
+            <!--text input-->
+                <div>
+                <label> First name</label>
+                <input type="text" name="firstName" placeholder="Enter first name">
+                </div>
+                
+                <br>
+
+                <div>
+                <label> Last name</label>
+                <input type="text" name="lastName" placeholder="Enter last name"> 
+                </div>
+
+                <br>
+
+           <!--email input-->
+                <div>
+                <label>Email</label>
+                <input type="email" name="email">
+                </div>
+           <!--textarea-->
+
+                <br>
+
+                <div>
+                <label>Message</label> 
+                <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+                </div>
+
+                <br>
+           <!--drop-down list-->
+
+                
+
+                <div>
+                 <label>Gender</label>   
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Option</option>
+                </select>
+                </div>
+
+                <br>
+           <!--number input-->
+                <div>
+                 <label>Age:</label>   
+                 <input type="number" name="age">
+                </div>
+
+                <br>
+
+           <!--dateinput-->
+                <div>
+                <label>Birthday:</label>
+                <input type="date" name="birthday">
+                </div>
+
+                <br>
+
+           <!--submit button-->
+               <input type="submit" name="submit" value="submit">
+            </form>
+
+            <br>
+
+            <!--Event handling:Button-->
+            <button>Click</button>
+
+            <br>
+            <!--image:Inline element-->
+            <a href="../images/Aloe.jpg"><!--NB:browser 
+            don't just open HTML files but 
+            files like images as well-->
+                 <img src="../images/Aloe.jpg" alt="" width="200px" height="200px">
+            </a>
+          <!--Quotations--> 
+            <blockquote cite="http://traversymedia.com">
+                Lorem, ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Iusto minus dignissimos rerum quae 
+                praesentium inventore distinctio, 
+                deserunt eaque labore, similique 
+                soluta cum dolor saepe 
+                Optio placeat sit doloremque cumque!
+            </blockquote>
+            
+            <p>The <abbr title="Ultimate Fighting Championship">UFC</abbr>
+               is awesome</p>
+
+            <p> <cite>HTML Crash Course</cite> 
+                 by David Traversy</p>
+        </body>
+    </html>

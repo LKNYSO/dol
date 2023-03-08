@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+
+.nightMode{
+    background: linear-gradient(to right,rgb(145, 58, 145),rgb(66, 3, 66));
+    color: white; 
+}
+#compName{
+    color: rgb(6, 6, 31);
+}
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header div{
+    padding: 5px 0px;
+}
+#nav{
+    /* display: inline; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 7px;
+}
+.navList{
+    list-style-type: none;
+    display: inline;
+    padding: 0 2px;
+}

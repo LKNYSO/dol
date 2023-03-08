@@ -1,0 +1,111 @@
+header,#calcBtn{
+    border-radius: 20px;
+    background: green;
+    color: gold;
+    padding-left: 5px;
+}
+
+#prntDate{
+    position: absolute;
+    right: 20px;  
+    margin: 0px;
+}
+.halign{
+    display: inline;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#divtop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.inputCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.inpt{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 4px;
+    /* align-items: center; */
+}label{
+    margin: 0px 4px;
+}
+.offType{
+    display: flex;
+    flex-direction: row;
+
+}
+.mrgn{
+    margin: 10px;
+}
+.pmrgn{
+    margin: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+.divMrgn{
+    margin: 4px;
+}
+
+.radioPair{
+    display: flex;
+    flex-direction: row;
+}
+#input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: gold;
+    color: green;
+    font-weight: bold;
+    font-size: x-large;
+
+    border-radius: 20px;
+}
+
+.inputPairs{
+    display: inline;
+    margin: 10px;
+}
+
+.inbx{
+    width: 25px;
+    margin-top: 3px;
+}
+
+#outpt{
+    padding: 10px;
+    margin: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center; 
+}
+
+#logo{
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+#calcBtn{
+    margin: 10px 0px;
+}
+
+td{
+    vertical-align: middle;
+}
+
+.inbx{
+    margin-bottom: 6px;
+}

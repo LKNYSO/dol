@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shumi</title>
+    <link rel="stylesheet" href="shumiStyle.css">
+</head>
+<body>
+    <header>
+        <h1 id="logo" class="halign">SHUMI</h1>
+        <h1 id="prntDate" class="halign" ></h1>
+    </header>
+
+    <main>
+
+        <div id="divtop">
+            <aside id="inputType" class="mrgn">
+                <p>
+                    Type of offering?
+                </p>
+                <!-- radio button for Sabbath School -->
+                <div class="radioPair">
+                    <input type="radio" name="offRadio" id="radioSS" class="offType" value="Sabbath School">
+                    <label for="offType">Sabbath School</label>
+                </div>
+                
+    
+                <!-- radio button for Divine -->
+                <div class="radioPair">
+                    <input type="radio" name="offRadio" id="radioDiv" class="offType" value="Divine">
+                    <label for="offType">Divine</label>
+                </div>
+                
+                
+                <!-- radio button for Thanksgiving -->
+                <div class="radioPair">
+                    <input type="radio" name="offRadio" id="radioThnx" class="offType" value="Thanksgiving">
+                    <label for="offType">Thanksgiving</label>
+                </div>
+                
+    
+                <!-- radio button for Poor -->
+                <div class="radioPair">
+                    <input type="radio" name="offRadio" id="radioPoor" class="offType" value="Poor">
+                    <label for="offType">Poor</label>
+                </div>
+    
+                <!-- radio button for 13th Sabbath -->
+                <div class="radioPair">
+                    <input type="radio" name="offRadio" id="radio13Sbth" class="offType" value="13 Sabbath">
+                    <label for="offType">13 Sabbath</label>
+                </div>
+                
+                <!-- radio button for Birthday -->
+                <div class="radioPair">
+                    <input type="radio" name="offRadio" id="radioBday" class="offType" value="Birthday">
+                    <label for="offType">Birthday</label>
+                </div>
+    
+            </aside>
+    
+            <section id="input" class="mrgn">
+    
+                <table id="monTable">
+                    
+                    <tr>
+                        <!--R200x-->
+                        <td>
+                            <div class="divMrgn">
+                                <div class="inputCont">
+                                    <div class="inpt">
+                                        <label for="200bx">R200</label>
+                                        <input type="text" name="200bx" class="inbx" id="200bx">
+                                    </div>
+                                    <div>
+                                        <p id="prntR200" class="pmrgn"></p>
+                                    </div>   
+                                </div>
+                            </div>
+                        </td>
+                        <!--R100x-->
+                        <td>
+                            <div class="divMrgn">
+                                <div class="inputCont">
+                                    <div class="inpt">
+                                        <label for="100bx">R100</label>
+                                        <input type="text" name="100bx" class="inbx" id="100bx">
+                                    </div>
+                                    <div>
+                                        <p id="prntR100" class="pmrgn"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <!--R50x-->
+                        <td>
+                            <div class="divMrgn">
+                                <div class="inputCont">
+                                    <div class="inpt">
+                                        <label for="50bx">R50</label>
+                                        <input type="text" name="50bx" class="inbx" id="50bx">
+                                    </div>
+                                    <div>
+                                        <p id="prntR50" class="pmrgn"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <!--R20x-->
+                        <td>
+                            <div class="divMrgn">
+                                <div class="inputCont">
+                                    <div class="inpt">
+                                        <label for="20bx">R20</label>
+                                        <input type="text" name="20bx" class="inbx" id="20bx">
+                                    </div>
+                                    <div>
+                                        <p id="prntR20" class="pmrgn"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <!--R10x-->
+                        <td>
+                            <div class="divMrgn"> 
+                                <div class="inputCont"> 
+                                    <div class="inpt">
+                                        <label for="10bx">R10</label>
+                                        <input type="text" name="10bx" class="inbx" id="10bx">
+                                    </div>
+                                    <div>
+                                        <p id="prntR10" class="pmrgn"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </td>
+                        <!--R5x--> 
+                        <td>
+                            <div class="divMrgn">
+                                <div class="inputCont"> 
+                                    <div class="inpt">
+                                        <label for="5bx">R5</label>
+                                        <input type="text" name="5bx" class="inbx" id="5bx">
+                                    </div>
+                                    <div>
+                                        <p id="prntR5" class="pmrgn"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </td>
+                        <!--R2x-->
+                        <td>
+                            <div class="divMrgn">
+                                <div class="inputCont"> 
+                                    <div class="inpt">
+                                        <label for="2bx">R2</label>
+                                        <input type="text" name="2bx" class="inbx" id="2bx">
+                                    </div>
+                                    <div>
+                                        <p id="prntR2" class="pmrgn"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </td>
+                        <!--R1x-->
+                        <td>
+                            <div class="divMrgn">
+                                <div class="inputCont"> 
+                                    <div class="inpt">
+                                        <label for="1bx">R1</label>
+                                        <input type="text" name="1bx" class="inbx" id="1bx">
+                                    </div>
+                                    <div>
+                                        <p id="prntR1" class="pmrgn"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </td>
+                    </tr>
+    
+                        
+                    <tr>
+                        <!--50c x-->
+                        <td>
+                            <div class="divMrgn">
+                                <div class="inputCont"> 
+                                    <div class="inpt">
+                                        <label for="bx50">50c</label>
+                                        <input type="text" name="bx50" class="inbx" id="bx50">
+                                    </div>
+                                    <div>
+                                        <p id="prnt50c" class="pmrgn"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </td>
+                        <!--20c x-->
+                        <td>
+
+                            <div class="divMrgn">
+                                <div class="inputCont"> 
+                                    <div class="inpt">
+                                        <label for="bx20">20c</label>
+                                        <input type="text" name="bx20" class="inbx" id="bx20">
+                                    </div>
+                                    <div>
+                                        <p id="prnt20c" class="pmrgn"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </td>
+                        <!--10c x-->
+                        <td>
+                            <div class="divMrgn">
+                                <div class="inputCont"> 
+                                    <div class="inpt">
+                                        <label for="bx10">10c</label>
+                                        <input type="text" name="bx10" class="inbx" id="bx10">
+                                    </div>
+                                    <div>
+                                        <p id="prnt10c" class="pmrgn"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </td>
+                        <!--5c x-->
+                        <td>
+                            <div class="divMrgn">
+                                <div class="inputCont"> 
+                                    <div class="inpt">
+                                        <label for="bx5">5c</label>
+                                        <input type="text" name="bx5" class="inbx" id="bx5">
+                                    </div>
+                                    <div>
+                                        <p id="prnt5c" class="pmrgn"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </td>
+                    </tr>
+        
+                    
+                   
+        
+                   
+                    
+                </table>
+                <!--calculate button-->
+                <input type="button" value="calculate" id="calcBtn" onclick="calcOff(textID, radioID)">
+
+                <!-- /*'spreadsheet' will have to be comprised of 2 strings:
+                    1. mini calculations
+                    2. total*/ -->
+                <section id="outpt"> 
+
+                    <label for="total">Subtotal R</label>
+                    <input type="text" id="subtotal1"></p>
+
+                    <label for="total">Subtotal R</label>
+                    <input type="text" id="subtotal2"></p>
+                    
+                    <label for="total">Total R</label>
+                    <input type="text" id="total"></p>
+                    <p id="sprdsheet"> </p>
+                </section>
+    
+            </section>
+            <!-- <div testCon>
+                <label for="v">label 1</label>
+                <input type="text" id="v" class="c">
+
+                <label for="v2">label 2</label>
+                <input type="text" id="v2"  class="c">
+
+                <label for="v3">label 3</label>
+                <input type="text" id="v3"  class="c">
+
+                <label for="v4">label 4</label>
+                <input type="text" id="v4"  class="c">
+            </div> -->
+        </div>
+        
+
+        <div id="divbottom">
+
+        </div>
+        
+
+        
+
+       
+        
+    </main>
+   
+
+</body>
+<footer>
+    <p id="author">by Br. L. Brukwe</p>
+</footer>
+
+<script>
+    //TESTING EVENT HANDLING
+    /* const inpt=document.getElementsByClassName('c'); */
+    //CODE BELOW WORKS LIKE I WANT IT TO (event Object)
+    /* Array.from(inpt).for+Each(inputs => inputs.addEventListener('input', (event)=>
+    {console.log(event.target.value)})); */
+    //****CHOSEN SOLUTION****CODE BELOW WORKS LIKE I WANT IT TO (event Object passed in function)
+    /* Array.from(inpt).forEach(inputs => inputs.addEventListener('input', (event)=>
+    {fCalc(event)}));
+    function fCalc(ip) {
+        console.log(Number(ip.target.value));
+        console.log(ip.target.labels[0].textContent);
+    } */
+    //CODE WORKS AFTER INITIALISATION ONLY - NO UPDATING
+    /* Array.from(inpt).forEach(inputs => inputs.addEventListener('input',
+    console.log(`using this. keyword:${inputs}`),
+    fCalc(inputs)));
+    function fCalc(ip) {
+        console.log(`test:${ip}`);
+    }; */
+    //CODE BELOW WORKS LIKE I WANT IT TO (this. keyword)
+    /* Array.from(inpt).forEach(inputs =>{
+        inputs.addEventListener('input',
+        function(){
+            console.log(this.value);
+        });
+    }); */
+    /*GOING TO ATTEMPT TO MOVE FUNCTION IN SAME
+      SCOPE AS addEventListener: 
+      RESULTS = 
+      CODE BELOW WORKS LIKE I WANT IT TO (found out 'inputs' is
+      a [object InputEvent], so I used .target.value)*/
+    /* Array.from(inpt).forEach(inputs => inputs.addEventListener('input',
+    function fCalc(inputs) {
+        console.log(`test:${inputs.target.value}`);
+    })); */
+    
+    /*WHAT I'VE NOTICED:
+    - WHEN 'inputs' IS PASSED A PARAMETER IN A 
+      FUNCTION INSIDE THE addEventListener IT'S PASSED
+      AS AN [object InputEvent]. AND ONLY WHEN [object InputEvent]
+      ARE INVOLVED DOES addEventListener SEEM TO WORK AS INTENDED
+    - OTHERWISE 'inputs' IS PASSED AS 
+      A [HTML InputElement] AND BECAUSE WE END UP DEALING
+      WITH THESE INSTEAD ACTUAL EVENTS, WE HAVE UNINTENDED RESULTS
+      WHEN DEALING WITH THE EVENT HANDLER (AFTER ALL - IT 
+      HANDLES EVENTS - NOT INPUT ELEMENTS*/
+
+    //global variables (DATE)
+    var date = new Date();
+    let oDate 
+    = date.toLocaleDateString('en-GB')//had to use Number(date.getMonth()+1) coz laptop date is a month behind, but found SOLUTION in using .toLocaleDateString('en-GB') 
+    document.getElementById('prntDate').innerHTML 
+    = oDate;
+
+    let ttl = 0  //variables to store total value
+    let sbTtl1 = 0
+    let sbTtl2 = 0
+    let prnt = '' //variables to store print value 
+
+    //let prevTtl = 0; //variables to store previous total value
+    //let prevPrnt = '' //variables to store previous print value
+
+
+
+    //EVENTHANDLER SHANDIS
+    /*
+    1.check for change in input among input.inbx
+    2.check for where it happened (attach eventhndlr to each input'
+    print)
+
+     */
+
+    //global variables (EVENT HANDLER)
+    const radioID = document.querySelectorAll('input.offType');
+    const textID = document.getElementsByClassName('inbx');
+    console.log(`radioID (document.getElementsByTagName): ${Array.from(radioID)}`);
+    console.log(`textID labels (R200): ${Array.from(textID)[0].labels[0].textContent} `)
+
+
+    //EVENT HANDLERCODE WORKS HOW I WANT 
+    Array.from(textID).forEach(textIDs => textIDs.addEventListener('input', (event) =>
+    {updateCalc(event)}));
+    function updateCalc(txtID) {
+        console.log(`textID.labels[0].textContent: ${txtID.target.labels[0].textContent}`)
+        console.log(`textID value: ${txtID.target.value}`)
+
+        let t = txtID.target.labels[0].textContent;//return label
+        switch (t) {
+            case 'R200': /* R200 */
+                if(txtID.target.value===""){
+                    document.getElementById('prntR200').innerHTML 
+                    = "";
+                }else if(isNaN(txtID.target.value) == false && (Number(txtID.target.value)%1 == 0)/* =="NaN" */){
+                            document.getElementById('prntR200').innerHTML 
+                            = `R200 x ${Number(txtID.target.value)} = R ${(Number(document.getElementById('200bx').value)*200.00).toFixed(2)}`;
+                }else{
+                    document.getElementById('prntR200').innerHTML 
+                    = `please fill in a number`;
+                    /* alert('please fill in a number') */
+                    txtID.target.value = ""
+                }
+                break;
+
+            case 'R100': /* R100 */
+                if(txtID.target.value===""){
+                    document.getElementById('prntR100').innerHTML 
+                    = ""
+                }else if(isNaN(txtID.target.value) == false && (Number(txtID.target.value)%1 == 0)){
+                    document.getElementById('prntR100').innerHTML 
+                    = `R100 x ${Number(txtID.target.value)} = R ${(Number(document.getElementById('100bx').value)*100.00).toFixed(2)}`;
+                }else{
+                    document.getElementById('prntR100').innerHTML 
+                    = `please fill in a number`;
+                    txtID.target.value = ""
+                }
+                break;
+
+            case 'R50': /* R50 */
+                 if(txtID.target.value===""){
+                    document.getElementById('prntR50').innerHTML 
+                    = ""
+                 }else if(isNaN(txtID.target.value) == false && (Number(txtID.target.value)%1 == 0)){
+                    document.getElementById('prntR50').innerHTML 
+                    = `R50 x ${Number(txtID.target.value)} = R ${(Number(document.getElementById('50bx').value)*50.00).toFixed(2)}`;
+                 }else{
+                    document.getElementById('prntR50').innerHTML 
+                    = `please fill in a number`;
+                    txtID.target.value = ""
+                }
+                
+                break;
+
+            case 'R20': /* R20 */
+                 if(txtID.target.value===""){
+                    document.getElementById('prntR20').innerHTML 
+                    = ""
+                 }else if(isNaN(txtID.target.value) == false && (Number(txtID.target.value)%1 == 0)){
+                    document.getElementById('prntR20').innerHTML 
+                    = `R20 x ${Number(txtID.target.value)} = R ${(Number(document.getElementById('20bx').value)*20.00).toFixed(2)}`;
+                 }else{
+                    document.getElementById('prntR20').innerHTML 
+                    = `please fill in a number`;
+                    txtID.target.value = ""
+                 }
+                break;
+
+            case 'R10': /* R10 */
+                 if(txtID.target.value===""){
+                    document.getElementById('prntR10').innerHTML 
+                    = ""
+                 }else if(isNaN(txtID.target.value) == false && (Number(txtID.target.value)%1 == 0)){
+                    document.getElementById('prntR10').innerHTML 
+                    = `R10 x ${Number(txtID.target.value)} = R ${(Number(document.getElementById('10bx').value)*10.00).toFixed(2)}`;
+                 }else{
+                    document.getElementById('prntR10').innerHTML 
+                    = `please fill in a number`;
+                    txtID.target.value = ""
+                 }
+                
+                break;
+
+            case 'R5': /* R5 */
+                 if(txtID.target.value===""){
+                    document.getElementById('prntR5').innerHTML 
+                    = "" 
+                 }else if(isNaN(txtID.target.value) == false && (Number(txtID.target.value)%1 == 0)){
+                    document.getElementById('prntR5').innerHTML 
+                    = `R5 x ${Number(txtID.target.value)} = R ${(Number(document.getElementById('5bx').value)*5.00).toFixed(2)}`;
+                 }else{
+                    document.getElementById('prntR5').innerHTML 
+                    = `please fill in a number`;
+                    txtID.target.value = ""
+                 }
+                
+                break;
+
+            case 'R2': /* R2 */
+                 if(txtID.target.value===""){
+                    document.getElementById('prntR2').innerHTML 
+                    = ""
+                 }else if(isNaN(txtID.target.value) == false && (Number(txtID.target.value)%1 == 0)){
+                    document.getElementById('prntR2').innerHTML 
+                    = `R2 x ${Number(txtID.target.value)} = R ${(Number(document.getElementById('2bx').value)*2.00).toFixed(2)}`;
+                 }else{
+                    document.getElementById('prntR2').innerHTML 
+                    = `please fill in a number`;
+                    txtID.target.value = ""
+                 }
+                
+                break;
+
+            case 'R1': /* R1 */
+                 if(txtID.target.value===""){
+                    document.getElementById('prntR1').innerHTML 
+                    = ""
+                 }else if(isNaN(txtID.target.value) == false && (Number(txtID.target.value)%1 == 0)){
+                    document.getElementById('prntR1').innerHTML 
+                    = `R1 x ${Number(txtID.target.value)} = R ${(Number(document.getElementById('1bx').value)*1.00).toFixed(2)}`;
+                 }else{
+                    document.getElementById('prntR1').innerHTML 
+                    = `please fill in a number`;
+                    txtID.target.value = ""
+                 }
+               
+                break;
+
+            case '50c': /* 50c */
+                if(txtID.target.value===""){
+                    document.getElementById('prnt50c').innerHTML 
+                    = ""
+                }else if(isNaN(txtID.target.value) == false && (Number(txtID.target.value)%1 == 0)){
+                    document.getElementById('prnt50c').innerHTML 
+                    = `50c x ${Number(txtID.target.value)} = R ${(Number(document.getElementById('bx50').value)*0.50).toFixed(2)}`;
+                }else{
+                    document.getElementById('prnt50c').innerHTML 
+                    = `please fill in a number`;
+                    txtID.target.value = ""
+                 }
+                
+                break;
+
+            case '20c':/* 20c */
+                 if(txtID.target.value===""){
+                    document.getElementById('prnt20c').innerHTML 
+                    = ""
+                 }else if(isNaN(txtID.target.value) == false && (Number(txtID.target.value)%1 == 0)){
+                    document.getElementById('prnt20c').innerHTML 
+                    = `20c x ${Number(txtID.target.value)} = R ${(Number(document.getElementById('bx20').value)*0.20).toFixed(2)}`;
+                 }else{
+                    document.getElementById('prnt20c').innerHTML 
+                    = `please fill in a number`;
+                    txtID.target.value = ""
+                 }
+                break;
+
+            case '10c': /* 10c */
+                 if(txtID.target.value===""){
+                    document.getElementById('prnt10c').innerHTML 
+                    = "" 
+                 }else if(isNaN(txtID.target.value) == false && (Number(txtID.target.value)%1 == 0)){
+                    document.getElementById('prnt10c').innerHTML 
+                    = `10c x ${Number(txtID.target.value)} = R ${(Number(document.getElementById('bx10').value)*0.10).toFixed(2)}`;
+                 }else{
+                    document.getElementById('prnt10c').innerHTML 
+                    = `please fill in a number`;
+                    txtID.target.value = ""
+                 }
+                break;
+
+            case '5c': /* 5c */
+                 if(txtID.target.value===""){
+                    document.getElementById('prnt5c').innerHTML 
+                    = ""
+                 }else if(isNaN(txtID.target.value) == false && (Number(txtID.target.value)%1 == 0)){
+                    document.getElementById('prnt5c').innerHTML 
+                    = `5c x ${Number(txtID.target.value)} = R ${(Number(document.getElementById('bx5').value)*0.05).toFixed(2)}`;
+                 }else{
+                    document.getElementById('prnt5c').innerHTML 
+                    = `please fill in a number`;
+                    txtID.target.value = ""
+                 }
+                break;   
+
+            default:
+                break;
+        }}
+    
+    /*thinking of passing radioID,textID global parameters
+    as parameters and then using switch case as with updateCalc*/
+    function calcOff(textID, radioID) {//pass textID, radioID as params
+        
+        
+     //ttl = ttl//+ prevTtl //*?* interestingly enough, ttl + prevTtl works
+     console.log(ttl);
+    
+
+        /*REPLACE:
+        Number(document.getElementById('200bx').value) -> Array.from(textID)[0].value
+        Number(document.getElementById('100bx').value) -> Array.from(textID)[1].value
+        Number(document.getElementById('50bx').value) -> Array.from(textID)[2].value
+        Number(document.getElementById('20bx').value) -> Array.from(textID)[3].value
+        Number(document.getElementById('10bx').value) -> Array.from(textID)[4].value
+        Number(document.getElementById('5bx').value) -> Array.from(textID)[5].value
+        Number(document.getElementById('2bx').value) -> Array.from(textID)[6].value
+        Number(document.getElementById('1bx').value) -> Array.from(textID)[7].value
+        Number(document.getElementById('bx50').value) -> Array.from(textID)[8].value
+        Number(document.getElementById('bx20').value) -> Array.from(textID)[9].value
+        Number(document.getElementById('bx10').value) -> Array.from(textID)[10].value
+        Number(document.getElementById('bx5').value) -> Array.from(textID)[11].value
+        
+        Alternatively, iterate and add to a 'total' and 'prntSht' variables*/
+        /* let totals; */
+        /*let prntSht*/
+        //New Problem: scope for variables I want to iterate 
+        /*Attempted Solution 1: WORKED (didn't have to pass as params though)
+                                LEARNED - .toFixed() produces STRING
+                                        - remembered variables in functions exist as 
+                                        long as function lasts
+        - since two paragraph elements exist ('sprdsheet' and 'total')
+        lets make global variables storing both of them and pass them
+        as parameters in calcOff()*/
+
+        
+        Array.from(textID).forEach(textIDs => 
+        ttl = ttl + updateTotal(textIDs));
+        /* console.log(updateTotal(textID[0]))
+        console.log(updateTotal(textID[1]))
+        console.log(updateTotal(textID[2]))    //NB calling a function in console still executes the function
+        console.log(updateTotal(textID[3]))
+        console.log(updateTotal(textID[4]))
+        console.log(updateTotal(textID[5]))
+        console.log(updateTotal(textID[6]))
+        console.log(updateTotal(textID[7]))
+        console.log(updateTotal(textID[8]))
+        console.log(updateTotal(textID[9]))
+        console.log(updateTotal(textID[10]))
+        console.log(updateTotal(textID[11])) */
+        function updateTotal(tID){
+            switch(tID.id){
+                case '200bx':
+                    console.log(Number(tID.value)*200)
+                    if(tID.value===""){
+                        prnt = prnt + ""
+                        return Number(tID.value)*200
+                       break;
+                    }else{
+                        prnt = prnt + `<br>` + tID.labels[0].textContent + " x " +
+                        tID.value + " = R" +  (Number(tID.value)*200).toFixed(2);
+                    }
+                    return Number(tID.value)*200
+                    break;
+
+                case '100bx':
+                    console.log(Number(tID.value)*100)
+                    if(tID.value===""){
+                        prnt = prnt + ""
+                        return Number(tID.value)*100
+                       break;
+                    }else{
+                        prnt = prnt + `<br>` + tID.labels[0].textContent + " x " +
+                        tID.value + " = R" +  (Number(tID.value)*100).toFixed(2);
+                    }
+                    return Number(tID.value)*100
+                    break;
+
+                case '50bx':
+                console.log(Number(tID.value)*50)
+                    if(tID.value===""){
+                        prnt = prnt + ""
+                        return Number(tID.value)*50
+                       break;
+                    }else{
+                        prnt = prnt + `<br>`+ tID.labels[0].textContent + " x " +
+                        tID.value + " = R" +  (Number(tID.value)*50).toFixed(2);
+                    }
+                    return Number(tID.value)*50
+                    break;
+
+                case '20bx':
+                console.log(Number(tID.value)*20)
+                    if(tID.value===""){
+                        prnt = prnt + ""
+                        return Number(tID.value)*20
+                       break;
+                    }else{
+                        prnt = prnt + `<br>` + tID.labels[0].textContent + " x " +
+                        tID.value + " = R" +  Number(tID.value)*20;
+                    }
+                    return Number(tID.value)*20
+                    break;
+
+                case '10bx':
+                console.log(Number(tID.value)*10)
+                    if(tID.value===""){
+                        prnt = prnt + ""
+                        return Number(tID.value)*10
+                       break;
+                    } else {
+                        prnt = prnt + `<br>` + tID.labels[0].textContent + " x " +
+                        tID.value + " = R" +  (Number(tID.value)*10).toFixed(2);
+                    }
+                    return Number(tID.value)*10
+                    break;
+
+                case '5bx':
+                console.log(Number(tID.value)*5)
+                    if (tID.value==="") {
+                        prnt = prnt + ""
+                        return Number(tID.value)*5
+                       break;
+                    } else {
+                        prnt = prnt + `<br>` + tID.labels[0].textContent + " x " +
+                        tID.value + " = R" +  (Number(tID.value)*5).toFixed(2);
+                    }
+                    return Number(tID.value)*5
+                    break;
+
+                case '2bx':
+                console.log(Number(tID.value)*2)
+                    if(tID.value===""){
+                        prnt = prnt + ""
+                        return (Number(tID.value)*2)
+                       break;
+                    }else{
+                        prnt = prnt + `<br>` + tID.labels[0].textContent + " x " +
+                        tID.value + " = R" +  (Number(tID.value)*2);
+                    }
+                    return Number(tID.value)*2
+                    break;
+                
+                case '1bx':
+                console.log(Number(tID.value)*1)
+                    if(tID.value===""){
+                        prnt = prnt + ""
+                        return Number(tID.value)*1
+                       break;
+                    }else{
+                        prnt = prnt + `<br>` + tID.labels[0].textContent + " x " +
+                        tID.value + " = R" +  (Number(tID.value)*1).toFixed(2);
+                    }
+                    return Number(tID.value)*1
+                    break;
+
+                case 'bx50':
+                console.log(Number(tID.value)*0.5)
+                    if (tID.value==="") {
+                        prnt = prnt + ""
+                        return Number(tID.value)*0.5
+                       break;
+                    }else{
+                        prnt = prnt + `<br>` + tID.labels[0].textContent + " x " +
+                        tID.value + " = R" +  (Number(tID.value)*0.5).toFixed(2);
+                    }
+                    return Number(tID.value)*0.50
+                    break;
+
+                case
+                 'bx20':
+                 console.log(Number(tID.value)*0.20)
+                 if (tID.value==="") {
+                        prnt = prnt + ""
+                        return Number(tID.value)*0.2
+                       break;
+                 } else {
+                        prnt = prnt + `<br>` + tID.labels[0].textContent + " x " +
+                        tID.value + " = R" +  (Number(tID.value)*0.2).toFixed(2);
+                 }
+                    return Number(tID.value)*0.20
+                    break;
+
+                case 'bx10':
+                console.log(Number(tID.value)*0.1)
+                    if (tID.value==="") {
+                        prnt = prnt + ""
+                        return Number(tID.value)*0.10
+                       break;
+                    } else {
+                        prnt = prnt + `<br>` + tID.labels[0].textContent + " x " +
+                        tID.value + " = R" +  (Number(tID.value)*0.10).toFixed(2);
+                    }
+                    return Number(tID.value)*0.10
+                    break;
+
+                case 'bx5':
+                console.log(Number(tID.value)*0.05)
+                    if (tID.value==="") {
+                        prnt = prnt + ""
+                        return Number(tID.value)*0.05
+                       break;
+                    } else {
+                        prnt = prnt + `<br>` + tID.labels[0].textContent + " x " +
+                        tID.value + " = R" +  (Number(tID.value)*0.05).toFixed(2);
+                    }
+                    return Number(tID.value)*0.05
+                    break;
+
+                default:
+                    break;
+            } 
+        }
+
+        /* let R200 = Number(document.getElementById('200bx').value)*200.00;
+        let R100 = Number(document.getElementById('100bx').value)*100.00;
+        let R50 = Number(document.getElementById('50bx').value)*50.00; 
+        let R20 = Number(document.getElementById('20bx').value)*20.00;
+        let R10 = Number(document.getElementById('10bx').value)*10.00;
+        let R5 = Number(document.getElementById('5bx').value)*5.0;
+        let R2 = Number(document.getElementById('2bx').value)*2.00;
+        let R1 = Number(document.getElementById('1bx').value)*1.00;
+        let cent50 = Number(document.getElementById('bx50').value)*0.50;
+        let cent20 = Number(document.getElementById('bx20').value)*0.20;
+        let cent10 = Number(document.getElementById('bx10').value)*0.10;
+        let cent5 = Number(document.getElementById('bx5').value)*0.05;
+        var total = R200 + R100 + R50 + R20 + R10 + R5 + R2 + R1 + cent50 + cent20 + cent10 + cent5; */
+     
+        //testing
+       /* console.log(Number(document.getElementById('200bx').value)); 
+        console.log(R200);
+        var r2h = R200;
+        console.log(200.00*2);
+        console.log(r2h);
+        console.log(Number(document.getElementById('200bx').value)*200.00);
+        */
+        //EOstesting
+        
+       
+        //radioID is gonna be taken in as parameter
+       /*  const radioID = document.querySelectorAll('input.offType');*/
+        
+        
+        const chckd = Array.from(radioID).find(radio => radio.checked);
+        console.log(chckd)
+        
+        
+        /* console.log(`radioID: ${Array.from(radioID)}`);
+        console.log(`radioID: ${chckd}`);
+        console.log(`${document.querySelectorAll('input')}`) */
+        
+    
+
+         /*function to print
+        Algorithim:
+        - iterate thorugh input.inbx
+        - if value is above 0
+            then concacatenate string*/
+        //radioID is gonna be taken in as parameter   
+        /* const textID = document.getElementsByClassName('inbx'); */
+        /* let prntSht= ''; */
+
+        
+        //ERROR HANDLING
+        /* from console; identify type of error and where it happens
+        and trycatch where if statement is error type*/
+         try {//had to put offEntry and all other functions and variables in try{} - for sake of scope
+            const offEntry = {
+                offDate: oDate,
+                offType: chckd.value,
+                offTotal: 'R'+ Number(ttl).toFixed(2),
+                offCalcSheet: prnt
+            }
+             //ENTRY FOR TEXT FILE
+            function Entry(offDate,offType,offTotal,offCalcSheet){
+            this.offDate = offDate;
+            this.offType = offType;
+            this.offTotal = offTotal;
+            this.offCalcSheet = offCalcSheet
+            /*text output will be in this function*/
+            }
+
+            //instantiasation of Entry
+            var testInit = new Entry(offEntry.offDate,offEntry.offType,offEntry.offTotal,offEntry.offCalcSheet);
+            //testing instantiasation
+            console.log(testInit);
+           }catch(error){
+            if (ReferenceError) {
+                alert('Please click the type of offering')
+            }  
+           }               
+        
+         /*DOM printing*/
+        /* document.getElementById('sprdsheet').innerHTML = 
+        "R200 x " + document.getElementById('200bx').value + " = " + R200 <br> 
+        "R100"; */
+        console.log(ttl)
+        document.getElementById('total').value = Number(/* prevTtl + */ ttl).toFixed(2);
+        //subtotals
+        document.getElementById('subtotal1').value = Number(
+            Number(document.getElementById('200bx').value*200)+
+            Number(document.getElementById('100bx').value*100)+
+            Number(document.getElementById('50bx').value*50)+
+            Number(document.getElementById('20bx').value*20)+
+            Number(document.getElementById('10bx').value*10)).toFixed(2);
+
+        document.getElementById('subtotal2').value = Number(
+            Number(document.getElementById('5bx').value*5)+
+            Number(document.getElementById('2bx').value*2)+
+            Number(document.getElementById('1bx').value*1)+
+            Number(document.getElementById('bx50').value*0.5)+
+            Number(document.getElementById('bx20').value*0.2)+
+            Number(document.getElementById('bx10').value*0.1)+
+            Number(document.getElementById('bx5').value*0.05)).toFixed(2);
+
+        document.getElementById('sprdsheet').innerHTML = `DATE: ${testInit.offDate} 
+        <br><br>TYPE OF OFFERING: ${testInit.offType}
+        <br><br>OFFERING BREAKDOWN:${testInit.offCalcSheet}` //prnt /* + prevPrnt */;
+      
+
+       
+
+        //CLEAR PREVIOUS INPUT DATA
+        /*Gonna try it at the end after data has been
+        recorded and read*/
+
+        /* prevTtl = ttl;
+        console.log(prevTtl); */
+        ttl = 0;
+        /* prevPrnt = prnt;
+        console.log(prevPrnt); */
+        prnt = '';
+
+        /*clear all values in textIDs*/
+        /* Array.from(textID).forEach(textIDs => 
+        textIDs.value =""); */
+        /*ERROR!{since prev values were cleared, only new values
+        will be calculated. noneed to clear ttl as initially 
+        theorised}
+        REALITY{prev ttl is stored as string} and surprisingly everything 
+        is working with just clearing ttl and prnt
+        SOLUTION
+        */
+     
+    }
+    
+    
+
+    
+    
+</script>
+</html>

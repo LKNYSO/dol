@@ -319,8 +319,18 @@ figure#sheetRose.fcard{
 figure#whiteVase2.fcard{
     background-image: url("images/whiteVase2.jpg");
 }
-
-
+figure#purpAutumn1.fcard{
+    background-image: url("images/purpAutumn1.jpg");
+}
+figure#purpAutumn2.fcard{
+    background-image: url("images/purpAutumn2.jpg");
+}
+figure#passege1.fcard{
+    background-image: url("images/passege1.jpg");
+}
+figure#passege2.fcard{
+    background-image: url("images/passege2.jpg");
+}
 
 /*PICS FOR 'LogAlbum'& 'TableAlbum*/
 
