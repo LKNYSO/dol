@@ -33,17 +33,23 @@
         <!---------------------HOME GRID CONTAINER----------------------->
                 <div class="container" > 
                     <!------------------PRODUCTS GRIDS------------------>
-                     <div class="pdng bgProducts lhvr" id="bx1">
-                         <h1 class="hmed">
-                             <a href="#prd" >Products</h1> </a>
+                     <div class="pdng bgProducts" id="bx1">
+                         <h1 class="hmed lhvr" >
+                             <a href="#prd" >Products </a>
                          </h1>   
                      </div>
-                    <div class="pdng bgProducts lhvr" id="bx2">
-                        <p class="plarge">
-                            Add a personal touch to your garden with
-                            our customised hand-crafted garden furniture.
-                        </p>
-                    </div>
+                     
+                        <div class="pdng bgProducts" id="bx2">
+                            <a href="#prd">
+                                <p class="plarge lhvr">
+                                    
+                                Add a personal touch to your garden with
+                                our customised hand-crafted garden furniture.
+                                </p>
+                            </a>   
+                        </div>
+                    
+
                     <div class="pdng bgProducts" id="bx3">
                         <!--block with just the pic-->
                     </div>
@@ -135,22 +141,22 @@
                 </div>
                
                 <div id="pbx8">
-                     <div id="pbx3" class="prdItems prdGrid">
+                     <div id="pbx3" class="prdGrid">
                         <!--for product items-->
                         <figure>
-                            <img src="images/2wdchairs.jpg" class="fcard" alt="2 wooden chairs">
+                            <img src="images/2wdchairs.jpg" class="prdItems" alt="2 wooden chairs">
                         </figure>
                      </div>
-                     <div id="pbx6" class="prdItems prdGrid">
+                     <div id="pbx6" class="prdGrid">
                         <!--for product items-->
                         <figure>
-                            <img src="images/wdchairFront.jpg" class="fcard" alt="front view of chair">
+                            <img src="images/wdchairFront.jpg" class="prdItems" alt="front view of chair">
                         </figure>
                      </div>
-                     <div id="pbx7" class="prdItems prdGrid">
+                     <div id="pbx7" class="prdGrid">
                         <!--for product items-->
                         <figure>
-                            <img src="images/wdchairSide.jpg" class="fcard" alt="side view of chair">
+                            <img src="images/wdchairSide.jpg" class="prdItems" alt="side view of chair">
                         </figure>
                      </div>
                 </div>
@@ -171,40 +177,40 @@
 
       <h1 id="servH1">SERVICES</h1>
         <div id="servCon"><!--inner 2nd flexbox container-->
-            <div id="servBlk1">
-             
-                <h2 class="servH2">STONE PAVING</h2>
+            <div>
                 <p class="pServ">
                     <!-- A stone-layed pavement? -->
                     <figure id="stonePvmnt" >
-                        <img src="images/Stone.jpg" class="fcard" alt="pic of stone pavement">
+                        <fieldset id="servBlk1">
+                            <legend><h2 class="servH2">STONE PAVING</h2></legend>
+                            <img src="images/Stone.jpg" class="fcard" alt="pic of stone pavement">
+                        </fieldset>
                     </figure>   
                 </p>
-
             </div>
 
-            <div id="servBlk2">
-
-                <h2 class="servH2">CUSTOMISED GATES</h2>
-                <p class="pServ">
+            <div>
+                    <p class="pServ">
                     <!-- A gate for your garden? -->
                     <figure id="gate" >
-                        <img src="images/GardenGate.jpg" class="fcard" alt="pic of gate">
+                        <fieldset id="servBlk2">
+                            <legend><h2 class="servH2">CUSTOMISED GATES</h2></legend>
+                            <img src="images/GardenGate.jpg" class="fcard" alt="pic of gate">
+                        </fieldset>
                     </figure>
-                </p>
-
+                    </p>
             </div>
 
-            <div id="servBlk3">
-
-                <h2 class="servH2">STONE PATHING</h2>
-                <p class="pServ">
+            <div>
+                    <p class="pServ">
                     <!-- A nice stone-layed path along your garden? -->
                     <figure id="stonePath" >
+                        <fieldset id="servBlk3"> 
+                            <legend><h2 class="servH2">STONE PATHING</h2></legend>
                         <img src="images/stonepath2.jpg" class="fcard" alt="pic of stone path">
+                        </fieldset>
                     </figure>
-                </p>
-
+                    </p>
             </div>
         </div>
         

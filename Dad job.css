@@ -20,7 +20,7 @@
         /* justify-content: center; */
         align-items: center;
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
         gap: 20px;
         border-radius: 20px;
         padding: 50px;
@@ -191,6 +191,8 @@ nav{
     width:auto;
 
     position: absolute;
+
+    z-index: 8;
 }
 
 main {
@@ -239,7 +241,7 @@ footer{
     width: 230px;
     height: 230px;
     background-size: cover;
-    box-shadow: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 5px 5px blanchedalmond;
     border-radius: 8px;
     margin: 16px 20px;
 }
@@ -439,9 +441,11 @@ article#Galleria{
 
 
 .container div{
+    z-index: 1;
     cursor: pointer;
     border-radius: 10px;
     height: 210px;
+
     background-size: cover;
     /*for pic to span and not repaet*/
     background-attachment: fixed;
@@ -452,9 +456,7 @@ article#Galleria{
     justify-content: center;
     align-items: center;
     text-align: center;
-    /*smooth transition between grids
-    we cav -> transition: all 0.5 ease-in*/
-    transition: all 0.5s ease-in;
+   
 }   
 
 
@@ -468,7 +470,6 @@ article#Galleria{
 
 
 section#Home{
-    box-sizing: border-box;
     margin-top: 20px;
     padding: 10;
     background: rgb(39, 3, 3);
@@ -548,14 +549,25 @@ to nth-type(8)*/
 .lhvr:hover, .dhvr:hover{
     /*opacity-> see-through, transparent effect*/
     opacity: 0.7;
+    
+}.lhvr a:hover{
+    color: rgb(145, 42, 145);
     /*transform: scale(0.98)->
     changes size of element */
     transform: scale(0.98);
+     /*smooth transition between grids
+    we cav -> transition: all 0.5 ease-in*/
+    transition: all 0.5s ease-in;
     
-}.lhvr a:hover{
-    color: rgb(145, 42, 145)
 }.dhvr a:hover{
-    color: rgb(224, 93, 224)
+    color: rgb(224, 93, 224);
+    /*transform: scale(0.98)->
+    changes size of element */
+    transform: scale(0.88);
+     /*smooth transition between grids
+    we cav -> transition: all 0.5 ease-in*/
+    transition: all 0.5s ease-in;
+    
 }
 /*---------------HOME SECTION-----------------*/
 
@@ -564,9 +576,10 @@ to nth-type(8)*/
 
 /*--------------------------PRODUCTS-----------------------------------*/
 #prd{
-    background-image: url("images/spinach.jpg");
-    background-size: cover;
+    background: none;
+    border-color: rgb(39, 3, 3);
     border-radius: 20px;
+    border-style: solid;
     margin: 20px 0;
 }#pbx1{
     border-radius: 20px;
@@ -590,8 +603,10 @@ to nth-type(8)*/
     text-align: center;
 }
 .prdtxt{
-    background: rgb(39, 3, 3);
-    color: orangered;   
+    border-color: rgb(39, 3, 3);
+    border-radius: 20px;
+    border-style: solid;
+    color: rgb(39, 3, 3);   
 }
 #prdP{
     font-size: 23px;
@@ -599,8 +614,12 @@ to nth-type(8)*/
     padding: 0 10px;
 }
 .prdItems{
-    background: rgb(39, 3, 3);
-    border-radius: 20px;
+    width: 230px;
+    height: 230px;
+    background-size: cover;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(39, 3, 3);
 }
 
 
@@ -631,7 +650,24 @@ to nth-type(8)*/
 .pServ{
     color: blanchedalmond;
 }
-
+fieldset{
+    border-color: blanchedalmond;
+    border-width: 3px;
+    border-radius: 7px;
+    /* background-size: cover; */
+}/* #servBlk1{
+    background-image: url("images/Stone.jpg");
+}#servBlk2{
+    background-image: url("images/GardenGate.jpg");
+}#servBlk3{
+    background-image: url("images/stonepath2.jpg");
+} */
+legend{
+    background-color: rgb(39, 3, 3);
+    border-radius: 7px;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
 /*-------------------------END OF:SERVICES-----------------------------*/
 
 /*---------------GALLERY SECTION---------------*/
