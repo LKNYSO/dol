@@ -37,7 +37,7 @@
    /********HOME PLARGE**********/
 @media screen and (min-width:723px) {
     .plarge{
-        font-size: 50px;
+        font-size: 48px;
         font-weight: bold;
         padding: 0 15px;
     }
@@ -142,7 +142,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: blanchedalmond;
+    /* color: blanchedalmond; */
 }
 li{
     list-style-type: none;
@@ -179,6 +179,8 @@ nav ul li {
      left: 0px;
 }#nav ul{
     padding: 0 20px;
+}#nav a{
+    color: blanchedalmond;  
 }
 
 nav{
@@ -547,26 +549,25 @@ to nth-type(8)*/
 }
 
 .lhvr:hover, .dhvr:hover{
-    /*opacity-> see-through, transparent effect*/
-    opacity: 0.7;
-    
-}.lhvr a:hover{
-    color: rgb(145, 42, 145);
+    /*opacity-> see-through, transparent effect
+    opacity: 0.7;*/
     /*transform: scale(0.98)->
     changes size of element */
     transform: scale(0.98);
      /*smooth transition between grids
     we cav -> transition: all 0.5 ease-in*/
     transition: all 0.5s ease-in;
+}
+.lhvr a, .dhvr a{
+    color: inherit;
+}
+.lhvr a:hover{
+    color: rgb(145, 42, 145);
+    
     
 }.dhvr a:hover{
     color: rgb(224, 93, 224);
-    /*transform: scale(0.98)->
-    changes size of element */
-    transform: scale(0.88);
-     /*smooth transition between grids
-    we cav -> transition: all 0.5 ease-in*/
-    transition: all 0.5s ease-in;
+    
     
 }
 /*---------------HOME SECTION-----------------*/
