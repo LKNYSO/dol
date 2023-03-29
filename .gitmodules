@@ -1,0 +1,3 @@
+[submodule "TraversyRepo"]
+	path = TraversyRepo
+	url = https://github.com/LKNYSO/TraversyRepo.git
