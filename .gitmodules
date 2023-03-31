@@ -2,5 +2,5 @@
 	path = TraversyRepo
 	url = https://github.com/LKNYSO/TraversyRepo.git
 [submodule "TraversyRepo"]
-                path = Traversy/GitHub2/TraversyRepo
-                url = https://github.com/LKNYSO/dol/tree/GAdeploy/Traversy/GitHub2/TraversyRepo.git
+                path = Traversy/GitHub2
+                url = https://github.com/LKNYSO/dol/tree/GAdeploy/Traversy/GitHub2.git
