@@ -3,4 +3,4 @@
 	url = https://github.com/LKNYSO/TraversyRepo.git
 [submodule "Traversy/GitHub2/TraversyRepo"]
                 path = Traversy/GitHub2/TraversyRepo
-                url = https://github.com/LKNYSO/dol/tree/GAdeploy/Traversy/GitHub2/TraversyRepo.git
+                url = https://github.com/LKNYSO/TraversyRepo.git
