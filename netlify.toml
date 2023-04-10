@@ -1,4 +1,4 @@
 [[redirects]]
 from = "/*"
-to = "/dad job.html"
+to = "/deploy/dad job.html"
 status = 200
