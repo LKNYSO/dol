@@ -1,5 +1,5 @@
 [[redirects]]
 from = "/*"
-to = "/Dad job.html"
+to = "/deploy/Dad job.html"
 status = 200
 force = true # COMMENT: ensure that we always redirect
