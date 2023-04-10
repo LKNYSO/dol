@@ -2,3 +2,4 @@
 from = "/*"
 to = "/Dad job.html"
 status = 200
+force = true # COMMENT: ensure that we always redirect
