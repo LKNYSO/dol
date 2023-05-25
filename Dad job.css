@@ -1,7 +1,7 @@
 @media(min-width: 1100px){
     /*-------home grid media query------------*/
     .container{
-        display: grid;
+        display: grid;  
         /* grid-template-columns is 
         neccesary  for columns to
         appear*/

@@ -1,19 +1,38 @@
 <html>
 
    <head>
-        <!--nav ul li {display: inline}-->
-    <nav id="nav">
-        <ul>
-            <li><a href="#Home">Home</a></li> 
-            <li><a href="#contacts">Contact Us</a></li> 
-            
-        </ul>
-    </nav>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <meta charset="UTF-8">
+       
        <title> Gardening Angels </title>
        <link rel="stylesheet" href="Dad Job.css">
    </head>
 
    <body>
+        <!--nav ul li {display: inline}-->
+    <nav id="nav"><!-- menu-wrap -->
+        <!--input = toggler-->
+        <input type="checkbox" class="menu-btn" name="menu-btn" id="menu-btn">
+        <!--div hamburger = label menu-icon-->
+        <label class="menu-icon" for="menu-btn">
+            <!--hamburger div = nav-icon-->
+            <span class="nav-icon"></span>
+        </label>
+        <div class="menu">
+            <div class="ovrlay">
+                <div>
+                    <ul class="menu-items">
+                        <li><a href="#Home">Home</a></li> 
+                        <li><a href="#contacts">Contact Us</a></li>
+                        <li><a href="#prd">Furniture</a></li> 
+                        <li><a href="#serv">Products</a></li> 
+                        <li><a href="#gllry">Galleria</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
        <!-----------LANDING PAGE------------->
        <main>
            <!--background-color: brown-->
@@ -131,17 +150,15 @@
             <div id="pbx1" class="prdtxt prdGrid">
                 <!--for text-->
                 <p id="prdP">
-                    Just like our handmade wooden chair
-                    was made from recycled material, 
-                    hand us anything and we'll make 
-                    garden furniture out of it!
+                    Using recycled material we'll make 
+                    hand-crafted garden for you.
                 </p>
             </div>
 
             <div id="pbx4">
                 <div id="pbx5">
                         <div id="pbx2" class="prdGrid">
-                        <h1 id="prdH1">PRODUCTS</h1>
+                        <h1 id="prdH1">FURNITURE</h1>
                         </div>
                 </div>
                
@@ -155,13 +172,13 @@
                      <div id="pbx6" class="prdGrid">
                         <!--for product items-->
                         <figure>
-                            <img src="images/wdchairFront.jpg" class="prdItems" alt="front view of chair">
+                            <img src="images/TableHole2.jpg" class="prdItems" alt="front view of chair">
                         </figure>
                      </div>
                      <div id="pbx7" class="prdGrid">
                         <!--for product items-->
                         <figure>
-                            <img src="images/wdchairSide.jpg" class="prdItems" alt="side view of chair">
+                            <img src="images/plantBench2.jpg" class="prdItems" alt="side view of chair">
                         </figure>
                      </div>
                 </div>
@@ -217,8 +234,9 @@
                     </figure>
                     </p>
             </div>
+
+            
         </div>
-        
      </section>
      <!------------------END OF: SERVICES------------------>
 
@@ -234,7 +252,7 @@
                                  GALLERIA
                                  
                              </h1>
-                             <h3 id="subtitle"> Select from our galleria of plants </h3>
+                             <h3 id="subtitle"> See anything you like?  <a href="#contacts">Contact Us</a>  </h3>
                         </header>
                         <div id="galpics">
                             <figure id="Aloe" class="fcard">
@@ -423,7 +441,7 @@
     <!------------------END OF: CONTACTS------------------>         
 
             <h3>
-                Project from
+                Brought to you by
                 <a href="#">Project Programmer</a>
             </h3>
         </footer>      

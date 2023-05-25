@@ -1,20 +1,403 @@
-@media(min-width: 1100px){
-    /*-------home grid media query------------*/
+
+/****************FONT-SIZES***********/
+
+@media screen and (max-width:300px) {
+    nav{
+        padding-right: 3px;
+        background-color: brown;
+        color: blanchedalmond;
+        padding: 0.3px 0px;
+        font-size: 90%;
+        width:auto;
+        position: absolute;
+        z-index: 8;
+    }
+    /***********GHS1ZE & LANDING PAGE*****************/
+    #showcase h1{
+        font-size: 250%;
+        margin-bottom: 4px;
+    }
+    #showcase p{
+        font-size: 90%;
+    }
+    /********HOME PLARGE**********/
+    .plarge{
+        font-size: 135%;
+        font-weight: bold;
+        padding: 0 15px;
+    }
+    /***********HOME PMED*************/
+    .pmed{
+        font-size: 120%;
+        font-weight: bold;
+        padding: 0 10px;
+    }#bx8p.pdng.bgGalleria{
+        padding: 0;
+    }
+    /*******HOME HMED*************/
+    .hmed{
+        font-size: 350%;
+   }
+   .hlarge{
+       font-size: 385%;
+   }
+   #prdH1{
+    color: rgb(39, 3, 3);
+    font-size: 292%;
+    margin: 0px;
+   }
+   #servH1{
+       font-size: 292%;
+       color: blanchedalmond;
+   }
+   #ghs1ze{
+       font-size: 292%;
+       margin-bottom: 0;
+   }
+}
+@media screen and (max-width:600px){
+    #pbx1{
+        margin: 8px 8px 0 8px;
+    }
+
+        /*-------show menu-------*/
+    #nav .menu-btn:checked ~ .menu{
+        visibility: visible;
+    }#nav .menu-btn:checked ~ .menu > .ovrlay{
+        transform: scale(1);
+        transition-duration: 0.75s;
+    }#nav .menu-btn:checked ~ .menu > .ovrlay > div{
+        opacity: 1;
+        transition: opacity 0.4s ease;
+    }#nav .menu{
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        overflow: hidden;
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }#nav .menu .ovrlay{/*.menu > div*/
+        background: rgb(35,6,0,0.85);/*d.brown*/
+        border-radius: 50%;
+        width: 200vw;
+        height:200vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;/*avoid oval*/
+        transform: scale(0);
+        transition: all 0.4s ease;
+    }#nav .menu > .ovrlay > div{
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }#nav .menu > .ovrlay > div > .menu-items{
+        padding: 0;
+    }#nav .menu > .ovrlay > div > .menu-items > li{
+        list-style: none;
+        color: blanchedalmond;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }#nav .menu > .ovrlay > div > .menu-items > li > a{
+        color: blanchedalmond;  
+        text-decoration: none;
+        transition: color 0.4s ease;
+    }
+    /*-------HAMBURGER MENU--------*/
+
+    /*-----hamburger button----*/
+    /*container for span elements*/
+    #nav .menu-icon{/*hambuurger*/
+        background: rgb(35,6,0);/*d.brown*/
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 50px;
+        height: 50px;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }#nav .menu-icon .nav-icon{/*hamburger div*/
+        position: relative;
+        height: 3px;
+        width: 100%;
+        background: blanchedalmond;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }#nav .menu-icon .nav-icon::before,
+    #nav .menu-icon .nav-icon::after{
+        content: "";
+        position: absolute;
+        z-index: 10;
+        height: 3px;
+        width: 100%;
+        top: -10px;
+        background: inherit;
+    }#nav .menu-icon .nav-icon::after{
+        top: 10px;
+    }#nav .menu-btn{/*toggler*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 11;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+    /*toggler animate*/
+    #nav .menu-btn:checked + .menu-icon > .nav-icon{
+        transform: rotate(135deg);
+    }
+    /*turn lines into X*/
+    #nav .menu-btn:checked + .menu-icon > .nav-icon::before,
+    #nav .menu-btn:checked + .menu-icon > .nav-icon::after{
+        top: 0;
+        transform: rotate(90deg); 
+    } 
+    /*rotate on hover when checked*/
+    #nav .menu-btn:checked:hover + .menu-icon > .nav-icon{
+        transform: rotate(225deg);
+    }
+}
+@media screen and (min-width:301px) and (max-width:500px) {
+    nav{
+        padding-right: 3px;
+        background-color: brown;
+        color: blanchedalmond;
+        padding: 0.3px 0px;
+        font-size: 110%;
+        width:auto;
+        position: absolute;
+        z-index: 8;
+    }
+    /***********GHS1ZE & LANDING PAGE*****************/
+    #showcase h1{
+        font-size: 350%;
+        margin-bottom: 4px;
+    }
+    #showcase p{
+        font-size: 120%;
+    }
+    #ghs1ze{
+        font-size: 350%;
+        margin: 0px;
+    }
+    /*#subtitle -> subtitle text for Galleria card*/
+    #subtitle{
+        margin-bottom: 4px;
+        padding-bottom: 14px;
+        font-size: 140%;
+    }
+    .plarge{
+        font-size: 148%;
+        font-weight: bold;
+        padding: 0 15px;
+    }
+    /***********HOME PMED********************/
+    .pmed{
+        font-size: 155%;
+        font-weight: bold;
+        padding: 0 10px;
+    }#bx8p.pdng.bgGalleria{
+        padding: 0;
+    }
+    /**************HOME HMED****************/
+    .hmed{
+        font-size: 450%;
+   }
+   .hlarge{
+       font-size: 510%;
+   }
+   .plarge{
+       font-size: 165%;
+   }
+   #prdH1{
+    color: rgb(39, 3, 3);
+    font-size: 342%;
+    margin: 0px;
+   }
+   #servH1{
+    font-size: 372%;
+    color: blanchedalmond;
+    }
+}
+@media screen and (min-width:601px){
+    #nav .menu{
+        background: rgb(35,6,0);/*d.brown*/
+        padding-right: 6%;
+        display: flex;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 12%;
+        align-items: center;
+        justify-content: flex-end;
+    }#nav .menu > .ovrlay > div > .menu-items{
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }#nav .menu > .ovrlay > div > .menu-items > li{
+        list-style: none;
+        color: blanchedalmond;
+        font-size: 1.5rem;
+        padding: 1.4rem;
+    }#nav .menu > .ovrlay > div > .menu-items > li > a{
+        color: blanchedalmond;  
+        text-decoration: none;
+        transition: color 0.4s ease;
+    }
+    #contacts{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /* #servBlk4{
+        display: flex;     
+        background: blanchedalmond;
+    }#furnSect p{
+        color: rgb(39, 3, 3);
+        font-size: 342%;
+        text-align: center;
+    }#furnSect{
+        display: flex;
+        flex-direction: column;
+    }#imgSectFurn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }  */
+}
+   @media screen and (min-width:501px) and (max-width:720px) {
+    nav{
+        padding-right: 3px;
+        background-color: brown;
+        color: blanchedalmond;
+        padding: 0.3px 0px;
+        font-size: 150%;
+        width:auto;
+        position: absolute;
+        z-index: 8;
+    }
+    #showcase h1{
+        font-size: 450%;
+        margin-bottom: 4px;
+    }
+    #showcase p{
+        font-size: 160%;
+    }
+
+    .plarge{
+        font-size: 228%;
+        font-weight: bold;
+        padding: 0 15px;
+    }
+    /***********HOME PMED********************/
+    .pmed{
+        font-size: 245%;
+        font-weight: bold;
+        padding: 0 10px;
+    }#bx8p.pdng.bgGalleria{
+        padding: 0;
+    }
+    /**************HOME HMED****************/
+    .hmed{
+        font-size: 650%;
+   }
+   .hlarge{
+       font-size: 722%;
+   }
+   #prdH1{
+    color: rgb(39, 3, 3);
+    font-size: 500%;
+    margin: 0px;
+   }
+   #servCon{/*inner 2nd flexbox container*/
+    display: flex;
+    justify-content: space-around;
+    }
+}   
+
+@media screen and (min-width:721px) and (max-width:1268px) {
     .container{
         display: grid;
         /* grid-template-columns is 
         neccesary  for columns to
         appear*/
         grid-template-columns: repeat(3, 1fr);
+    }
     
-    }   
+    /********HOME PLARGE**********/
+    .plarge{
+        font-size: 235%;
+        font-weight: bold;
+        padding: 0 15px;
+    }
+    /***********HOME PMED*************/
+    .pmed{
+        font-size: 220%;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+    /*******HOME HMED*************/
+    .hmed{
+        font-size: 80px;
+   }
+   .hlarge{
+       font-size: 680%;
+   }
+    nav{
+        padding-right: 3px;
+        background-color: brown;
+        color: blanchedalmond;
+        padding: 0.3px 0px;
+        font-size: 185%;
+        width:auto;
+        position: absolute;
+        z-index: 8;
+    }
+    /*--------showcase heading---------------*/
+    #showcase h1{
+        font-size: 620%;
+        margin-bottom: 4px;
+    }
+    #showcase p{
+        font-size: 40px;
+    }
+       
 
     /*------service flexbox media query---------*/
-    #servCon{/*inner 2nd flexbox container*/
-        display: flex;
-        justify-content: space-around;
+    #prdH1{
+        color: rgb(39, 3, 3);
+        font-size: 480%;
+        margin: 0px;
     }
-
+    
+    #servH1{
+        color: blanchedalmond;
+        font-size: 480%;
+        margin: 0px;
+    }
+    #ghs1ze{
+        font-size: 450%;
+        margin: 0px;
+    }
+    /*#subtitle -> subtitle text for Galleria card*/
+    #subtitle{
+        margin-bottom: 4px;
+        padding-bottom: 14px;
+        font-size: 240%;
+    }
     /*--------product flexbox media query--------*/
     #prdCon{
         /* justify-content: center; */
@@ -32,105 +415,155 @@
     }
 
 }
-
-/****************FONT-SIZES***********/
-   /********HOME PLARGE**********/
-@media screen and (min-width:723px) {
-    .plarge{
-        font-size: 48px;
-        font-weight: bold;
-        padding: 0 15px;
+@media screen and (min-width:1269px){
+    nav{
+        padding-right: 3px;
+        background-color: brown;
+        color: blanchedalmond;
+        padding: 0.3px 0px;
+        font-size: 185%;
+        width:auto;
+        position: absolute;
+        z-index: 8;
     }
-    /***********HOME PMED********************/
-    .pmed{
-        font-size: 35px;
-        font-weight: bold;
-        padding: 0 10px;
-    }
-    /**************HOME HMED****************/
-    .hmed{
-        font-size: 150px;
-   } 
-}    
-@media screen and (max-width:722px) {
-    /********END OF: HOME PLARGE**********/
-    .plarge{
-        font-size: 35px;
-        font-weight: bold;
-        padding: 0 15px;
-    }
-    /***********END OF:HOME PMED*************/
-    .pmed{
-        font-size: 20px;
-        font-weight: bold;
-        padding: 0 10px;
-    }
-    /*******END OF: HOME HMED*************/
-    .hmed{
-        font-size: 80px;
-   } 
-   
-    
-}
-
-
-/***********HOME HLARGE************/
-@media screen and (min-width:701px) {
-    .hlarge{
-        font-size: 180px;
-   }
-}
-@media screen and (max-width:700px){
-    .hlarge{
-        font-size: 80px;
-    }
-}
-/***********END OF:HOME HLARGE************/
-
-
-/******************SHOWCASE H1********************/
-@media screen and (min-width:606px) {
-    #showcase h1 {
-        font-size: 550%;
+    /*--------showcase heading---------------*/
+    #showcase h1{
+        font-size: 620%;
         margin-bottom: 4px;
     }
-}
-@media screen and (max-width:605px) {
-    #showcase h1 {
-        font-size: 350%;
-        margin-bottom: 4px;
+    #showcase p{
+        font-size: 40px;
     }
-}
-/******************END OF:SHOWCASE H1********************/
+       
 
-
-@media screen and (min-width:501px) {
-    /*****************GHS1ZE*****************/
-    #ghs1ze{
+    /*------service flexbox media query---------*/
+    #prdH1{
+        color: rgb(39, 3, 3);
         font-size: 480%;
         margin: 0px;
     }
-    /*#subtitle -> subtitle text for Galleria card*/
-    #subtitle{
-        margin-bottom: 4px;
-        padding-bottom: 14px;
-        font-size: 150%;
+    
+    #servH1{
+        color: blanchedalmond;
+        font-size: 480%;
+        margin: 0px;
     }
-}
-@media screen and (max-width:500px) {
-    /***********END OF: GHS1ZE*****************/
     #ghs1ze{
-        font-size: 280%;
+        font-size: 450%;
         margin: 0px;
     }
     /*#subtitle -> subtitle text for Galleria card*/
     #subtitle{
         margin-bottom: 4px;
         padding-bottom: 14px;
-        font-size: 100%;
+        font-size: 240%;
     }
-}
+    /*-------home grid media query------------*/
+    .container{
+        display: grid;
+        /* grid-template-columns is 
+        neccesary  for columns to
+        appear*/
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /********HOME PLARGE**********/
+    .plarge{
+        font-size: 265%;
+        font-weight: bold;
+        padding: 0 15px;
+    }
+    /***********HOME PMED*************/
+    .pmed{
+        font-size: 220%;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+    /*******HOME HMED*************/
+    .hmed{
+        font-size: 680%;
+   }
+   .hlarge{
+       font-size: 980%;
+   }
+    #prdCon{
+        /* justify-content: center; */
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+        border-radius: 20px;
+        padding: 50px;
+    }#pbx8{/*pics only flexbox*/
+        display: flex;
+        flex-direction: row;
+        /* margin-top: 50px; */
+    }
+    #servCon{/*inner 2nd flexbox container*/
+        display: flex;
+        justify-content: space-around;
+    }
+} 
+@media screen and (min-width: 1330px){
+    nav{
+        padding-right: 3px;
+        background-color: brown;
+        color: blanchedalmond;
+        padding: 0.3px 0px;
+        font-size: 120%;
+        width:auto;
+        position: absolute;
+        z-index: 8;
+    }
 
+    /*--------showcase heading---------------*/
+    #showcase h1{
+        font-size: 620%;
+        margin-bottom: 4px;
+    }
+    #showcase p{
+        font-size: 20px;
+    }
+     /********HOME PLARGE**********/
+     .plarge{
+        font-size: 235%;
+        font-weight: bold;
+        padding: 0 15px;
+    }
+    /***********HOME PMED*************/
+    .pmed{
+        font-size: 220%;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+    /*******HOME HMED*************/
+    .hmed{
+        font-size: 680%;
+   }
+   .hlarge{
+       font-size: 980%;
+   }
+   #prdH1{
+        color: rgb(39, 3, 3);
+        font-size: 480%;
+        margin: 0px;
+    }
+
+    #servH1{
+        color: blanchedalmond;
+        font-size: 480%;
+        margin: 0px;
+    }
+    #ghs1ze{
+        font-size: 450%;
+        margin: 0px;
+    }
+    /*#subtitle -> subtitle text for Galleria card*/
+    #subtitle{
+        margin-bottom: 4px;
+        padding-bottom: 14px;
+        font-size: 240%;
+    }      
+}
 
 /****************END OF: FONT-SIZES***********/
 
@@ -166,36 +599,11 @@ article{
     background-color: khaki;
 }
 
-nav ul li {
-   
-    display: inline;
-    padding-left: 16px;
-    background-color: brown;
-    color: blanchedalmond;
-    
-}#nav{
-     position: fixed;
-     top: 0px;
-     left: 0px;
-}#nav ul{
-    padding: 0 20px;
-}#nav a{
-    color: blanchedalmond;  
+
+#nav .menu-btn{/*toggler*/
+    opacity: 0;
 }
 
-nav{
-    padding-right: 3px;
-    background-color: brown;
-    color: blanchedalmond;
-    border-radius: 0 20px 20px 0;
-    padding: 0.3px 0px;
-    font-size: 20px;
-    width:auto;
-
-    position: absolute;
-
-    z-index: 8;
-}
 
 main {
     display: inline;
@@ -212,10 +620,7 @@ footer{
 #showcase{
     height: 100vh;
 }
-#showcase p{
-    
-    font-size: 20px;
-}
+
 
 /* -----end of #showcase ------*/
 
@@ -336,7 +741,7 @@ figure#passege2.fcard{
     background-image: url("images/passege2.jpg");
 }
 
-/*PICS FOR 'LogAlbum'& 'TableAlbum*/
+/*PICS FOR 'LogAlbum'; 'TableAlbum & 'GFurn'*/
 
 figure#LogAbove.fcard{
     background-image: url("images/LogAbove.jpg");
@@ -358,6 +763,9 @@ figure#Table2.fcard{
 figure#TableHole.fcard{
     background-image: url("images/TableHole.jpg");
 }
+figure#TableHole2.fcard{
+    background-image: url("images/TableHole2.jpg");
+}
 figure#TableLeftAngle.fcard{
     background-image: url("images/TableLeftAngle.jpg");
 }
@@ -365,7 +773,18 @@ figure#TableRightAngle.fcard{
     background-image: url("images/TableRightAngle.jpg");
 }
 
-
+figure#plantBench1.fcard{
+    background-image: url("images/plantBench1.jpg");
+}
+figure#plantBench2.fcard{
+    background-image: url("images/plantBench2.jpg");
+}
+figure#plantBench3.fcard{
+    background-image: url("images/plantBench3.jpg");
+}
+figure#plantBench4.fcard{
+    background-image: url("images/plantBench4.jpg");
+}
 
 /*---------------HOME SECTION-----------------*/
 
@@ -584,15 +1003,11 @@ to nth-type(8)*/
     margin: 20px 0;
 }#pbx1{
     border-radius: 20px;
-}#pbx3{
+}/*#pbx3{
     height: 335px;
-    /* width: 143px; */
-}
-#prdH1{
-    color: rgb(39, 3, 3);
-    font-size: 480%;
-    margin: 0px;
-}#pbx2{
+
+} */
+#pbx2{
     text-align: center;/*align "PRODUCTS"*/
 }
 #pbx4{/*heading + pics*/
@@ -613,6 +1028,7 @@ to nth-type(8)*/
     font-size: 23px;
     font-weight: bold;
     padding: 0 10px;
+    text-align: center;
 }
 .prdItems{
     width: 230px;
@@ -640,11 +1056,7 @@ to nth-type(8)*/
     border-radius: 20px;
     margin: 20px 0;
 }
-#servH1{
-    color: blanchedalmond;
-    font-size: 480%;
-    margin: 0px;
-}
+
 .servH2{
     color: blanchedalmond;
 }
@@ -694,9 +1106,11 @@ legend{
 }
 
 /*-------FOOTER------*/
-#contacts{
-    display: flex;
-    justify-content: space-around;
+#subtitle a{
+    color: rgb(39, 3, 3);
+}
+#subtitle a:hover{
+    color: rgb(145, 42, 145);
 }
 #contacts li{
     display: list-item;
