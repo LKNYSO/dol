@@ -6,28 +6,43 @@
        <meta charset="UTF-8">
        
        <title> Gardening Angels </title>
+
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+
        <link rel="stylesheet" href="Dad Job.css">
    </head>
 
    <body>
         <!--nav ul li {display: inline}-->
     <nav id="nav"><!-- menu-wrap -->
-        <!--input = toggler-->
-        <input type="checkbox" class="menu-btn" name="menu-btn" id="menu-btn">
-        <!--div hamburger = label menu-icon-->
-        <label class="menu-icon" for="menu-btn">
-            <!--hamburger div = nav-icon-->
-            <span class="nav-icon"></span>
-        </label>
+        
         <div class="menu">
+            <!-- made .menu container and gave .menu 
+            a fixed position so that overlay would
+            reference its position of .menu-icon who is of 
+            an absolute position from .menu 
+            (the above is a solution to the issue 
+            of having webpage go to top of the page 
+            everythim button was clicked) -->
+
+
+            <!--input = toggler-->
+            <input type="checkbox" class="menu-btn" name="menu-btn" id="menu-btn">
+            <!--div hamburger = label menu-icon-->
+            <label class="menu-icon" for="menu-btn">
+                <!--hamburger div = nav-icon-->
+                <span class="nav-icon"></span>
+            </label>
             <div class="ovrlay">
                 <div>
                     <ul class="menu-items">
-                        <li><a href="#Home">Home</a></li> 
-                        <li><a href="#contacts">Contact Us</a></li>
-                        <li><a href="#prd">Furniture</a></li> 
-                        <li><a href="#serv">Products</a></li> 
-                        <li><a href="#gllry">Galleria</a></li>
+                        <li><a href="#Home" onclick="toggleOff()">Home</a></li> 
+                        <li><a href="#contacts" onclick="toggleOff()">Contact Us</a></li>
+                        <li><a href="#prd" onclick="toggleOff()">Furniture</a></li> 
+                        <li><a href="#serv" onclick="toggleOff()">Services</a></li> 
+                        <li><a href="#gllry" onclick="toggleOff()">Galleria</a></li>
                     </ul>
                 </div>
             </div>
@@ -54,7 +69,7 @@
                     <!------------------PRODUCTS GRIDS------------------>
                      <div class="pdng bgProducts" id="bx1">
                          <h1 class="hmed lhvr" >
-                             <a href="#prd" >Products </a>
+                             <a href="#prd" >Furniture</a>
                          </h1>   
                      </div>
                      
@@ -446,4 +461,9 @@
             </h3>
         </footer>      
    </body>
+   <script>
+      function toggleOff(){
+        document.getElementById('menu-btn').checked = false;
+       }
+   </script>
 </html>

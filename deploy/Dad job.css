@@ -61,18 +61,35 @@
     }
 
         /*-------show menu-------*/
-    #nav .menu-btn:checked ~ .menu{
+    /* #nav .menu > .menu-btn:checked{
+        visibility: visible; 
+    }*/#nav .menu > .menu-btn:checked ~ .ovrlay{
         visibility: visible;
-    }#nav .menu-btn:checked ~ .menu > .ovrlay{
         transform: scale(1);
         transition-duration: 0.75s;
-    }#nav .menu-btn:checked ~ .menu > .ovrlay > div{
+    }#nav .menu > .menu-btn:checked ~ .ovrlay > div{
+        visibility: visible;
         opacity: 1;
         transition: opacity 0.4s ease;
+    }#nav .menu > .menu-btn:checked ~ .ovrlay > div > .menu-items{
+        visibility: visible;
+    }#nav .menu > .menu-btn:checked ~ .ovrlay > div > .menu-items > li{
+        visibility: visible;
+    }#nav .menu > .menu-btn:checked ~ .ovrlay > div > .menu-items > li > a{
+        visibility: visible;
+    }#nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }#nav .menu{
+        /* NB!!!!!
+        plan:
+        float: left;
+        opacity test */
         position: fixed;
         top: 0px;
-        right: 0px;
+        right: 0px; 
         width: 100%;
         overflow: hidden;
         visibility: hidden;
@@ -114,7 +131,8 @@
     /*container for span elements*/
     #nav .menu-icon{/*hambuurger*/
         background: rgb(35,6,0);/*d.brown*/
-        position: fixed;
+        visibility: initial;
+        position: absolute;
         top: 0;
         left: 0;
         z-index: 10;
@@ -124,6 +142,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 0 10px 10px 0;
     }#nav .menu-icon .nav-icon{/*hamburger div*/
         position: relative;
         height: 3px;
@@ -168,6 +187,10 @@
     #nav .menu-btn:checked:hover + .menu-icon > .nav-icon{
         transform: rotate(225deg);
     }
+    /*clicked link closes menu*/
+    /* #nav .menu-btn:checked + .menu > li > a:active{
+        
+    } */
 }
 @media screen and (min-width:301px) and (max-width:500px) {
     nav{
@@ -570,6 +593,7 @@
 /*-----------GLOBAL VAR--------*/
 
 body{
+    font-family: 'Aladin', cursive;
     background-color:rgb(190, 171, 133);
     
 }
