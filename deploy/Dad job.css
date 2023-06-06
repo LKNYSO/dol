@@ -14,11 +14,11 @@
     }
     /***********GHS1ZE & LANDING PAGE*****************/
     #showcase h1{
-        font-size: 250%;
+        font-size: 310%;
         margin-bottom: 4px;
     }
     #showcase p{
-        font-size: 90%;
+        font-size: 130%;
     }
     /********HOME PLARGE**********/
     .plarge{
@@ -54,8 +54,12 @@
        font-size: 292%;
        margin-bottom: 0;
    }
+   #cntctHead h2{
+       font-size: 92%;
+       margin-bottom: 0px;
+   }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:600px){/* MOBILE */
     #pbx1{
         margin: 8px 8px 0 8px;
     }
@@ -187,10 +191,7 @@
     #nav .menu-btn:checked:hover + .menu-icon > .nav-icon{
         transform: rotate(225deg);
     }
-    /*clicked link closes menu*/
-    /* #nav .menu-btn:checked + .menu > li > a:active{
-        
-    } */
+    
 }
 @media screen and (min-width:301px) and (max-width:500px) {
     nav{
@@ -205,11 +206,11 @@
     }
     /***********GHS1ZE & LANDING PAGE*****************/
     #showcase h1{
-        font-size: 350%;
+        font-size: 450%;
         margin-bottom: 4px;
     }
     #showcase p{
-        font-size: 120%;
+        font-size: 220%;
     }
     #ghs1ze{
         font-size: 350%;
@@ -245,16 +246,20 @@
        font-size: 165%;
    }
    #prdH1{
-    color: rgb(39, 3, 3);
-    font-size: 342%;
-    margin: 0px;
+        color: rgb(39, 3, 3);
+        font-size: 342%;
+        margin: 0px;
    }
    #servH1{
-    font-size: 372%;
-    color: blanchedalmond;
+        font-size: 372%;
+        color: blanchedalmond;
+    }
+    #cntctHead h2{
+        font-size: 302%;
+        margin-bottom: 0px;
     }
 }
-@media screen and (min-width:601px){
+@media screen and (min-width:601px){/* TAB/LAPTOP/PC */
     #nav .menu{
         background: rgb(35,6,0);/*d.brown*/
         padding-right: 6%;
@@ -341,14 +346,18 @@
        font-size: 722%;
    }
    #prdH1{
-    color: rgb(39, 3, 3);
-    font-size: 500%;
-    margin: 0px;
+        color: rgb(39, 3, 3);
+        font-size: 500%;
+        margin: 0px;
    }
    #servCon{/*inner 2nd flexbox container*/
-    display: flex;
-    justify-content: space-around;
-    }
+        display: flex;
+        justify-content: space-around;
+   }
+   #cntctHead h2{
+        font-size: 282%;
+        margin-bottom: 0px;
+   }   
 }   
 
 @media screen and (min-width:721px) and (max-width:1268px) {
@@ -415,6 +424,10 @@
         font-size: 450%;
         margin: 0px;
     }
+    #cntctHead h2{
+        font-size: 292%;
+        margin-bottom: 0px;
+    }
     /*#subtitle -> subtitle text for Galleria card*/
     #subtitle{
         margin-bottom: 4px;
@@ -451,11 +464,11 @@
     }
     /*--------showcase heading---------------*/
     #showcase h1{
-        font-size: 620%;
+        font-size: 690%;
         margin-bottom: 4px;
     }
     #showcase p{
-        font-size: 40px;
+        font-size: 50px;
     }
        
 
@@ -474,6 +487,10 @@
     #ghs1ze{
         font-size: 450%;
         margin: 0px;
+    }
+    #cntctHead h2{
+        font-size: 302%;
+        margin-bottom: 0px;
     }
     /*#subtitle -> subtitle text for Galleria card*/
     #subtitle{
@@ -540,11 +557,11 @@
 
     /*--------showcase heading---------------*/
     #showcase h1{
-        font-size: 620%;
+        font-size: 780%;
         margin-bottom: 4px;
     }
     #showcase p{
-        font-size: 20px;
+        font-size: 35px;
     }
      /********HOME PLARGE**********/
      .plarge{
@@ -579,6 +596,10 @@
     #ghs1ze{
         font-size: 450%;
         margin: 0px;
+    }
+    #cntctHead h2{
+        font-size: 292%;
+        margin-bottom: 0px;
     }
     /*#subtitle -> subtitle text for Galleria card*/
     #subtitle{
