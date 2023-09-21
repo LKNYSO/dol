@@ -698,13 +698,15 @@ footer{
 
 /* -----end of #showcase ------*/
 
+/*image way*/
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/*image way*/
+
 /*-------------------GALLERIA-------------------*/
-
-
-
-
-
-
 
 
 .card{
